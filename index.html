@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bella Cimino — Creative &amp; Design Portfolio</title>
+<meta name="description" content="Bella Cimino — graphic design, branding, and art portfolio. Marketing &amp; creative student available for internships and collaborations." />
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="build-note">
+  PLACEHOLDER SITE — swap files in /assets/images and /assets/resume, then edit the text marked TODO. See README.md for the full checklist.
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Bella Cimino</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO: main photo + logo/name -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Graphic Design · Branding · Art</p>
+        <h1>Hi, I&rsquo;m <span class="brush">Bella
+          <svg viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
+            <path class="stroke-path" d="M2 22 C 60 8, 120 34, 180 18 C 220 8, 260 26, 298 14 L 298 34 C 240 42, 180 24, 120 36 C 70 44, 30 30, 2 34 Z"/>
+          </svg>
+        </span>.</h1>
+        <p class="lede">TODO: One or two sentences in your voice — e.g. "I'm a marketing and design student who turns brand strategy into work people actually stop scrolling for. Currently looking for a fall creative marketing internship."</p>
+        <div class="button-row">
+          <a href="design.html" class="btn btn-primary">See my design work</a>
+          <a href="about.html" class="btn btn-secondary">About me &amp; resume</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/home/hero.jpg" alt="TODO: replace with a photo of Bella" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MONTAGE + quick intro -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-header">
+        <p class="eyebrow">A little more about me</p>
+        <h2>Design student, painter, and self-proclaimed pickleball fanatic.</h2>
+        <p>TODO: 3–4 sentences. Talk about your creative background, the internships/experience listed below, and the personality traits recruiters should remember you by — bubbly, determined, detail-obsessed, a good teammate. Keep it warm and specific, not generic.</p>
+      </div>
+      <div class="montage-grid">
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-1.jpg" alt="TODO: montage photo 1" /></a>
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-2.jpg" alt="TODO: montage photo 2" /></a>
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-3.jpg" alt="TODO: montage photo 3" /></a>
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-4.jpg" alt="TODO: montage photo 4" /></a>
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-5.jpg" alt="TODO: montage photo 5" /></a>
+        <a href="about.html" data-lightbox><img src="assets/images/home/montage-6.jpg" alt="TODO: montage photo 6" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS to Design / Art / About -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <p class="eyebrow">Explore the work</p>
+        <h2>Two ways to see what I make.</h2>
+      </div>
+      <div class="client-media" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="design.html" style="aspect-ratio: 3/4; position:relative;">
+          <img src="assets/images/design/school/school-cover.jpg" alt="Design portfolio cover" />
+        </a>
+        <a href="art.html" style="aspect-ratio: 3/4; position:relative;">
+          <img src="assets/images/art/2d/painting/painting-1.jpg" alt="Art portfolio cover" />
+        </a>
+        <a href="about.html" style="aspect-ratio: 3/4; position:relative;">
+          <img src="assets/images/about/headshot.jpg" alt="About Bella" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>&copy; <span id="year"></span> Bella Cimino. TODO: add your city/school here if you'd like.</span>
+    <a href="about.html#contact">Get in touch &rarr;</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">Close ✕</button>
+  <img src="" alt="" />
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
