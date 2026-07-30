@@ -3,95 +3,135 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bella Cimino — Creative &amp; Design Portfolio</title>
-<meta name="description" content="Bella Cimino — graphic design, branding, and art portfolio. Marketing &amp; creative student available for internships and collaborations." />
+<title>Isabella Cimino · Creative &amp; Design Portfolio</title>
+<meta name="description" content="Isabella (Bella) Cimino, graphic design, branding, and art portfolio. Marketing &amp; creative student available for internships and collaborations." />
 <link rel="icon" href="data:," />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <div class="build-note">
-  PLACEHOLDER SITE — swap files in /assets/images and /assets/resume, then edit the text marked TODO. See README.md for the full checklist.
+  PLACEHOLDER SITE: swap files in /assets/images and /assets/resume, then edit the text marked TODO. See README.md for the full checklist.
 </div>
 
 <header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="logo">Bella Cimino</a>
+    <a href="index.html" class="logo"><img src="assets/branding/signature.png" alt="Isabella Cimino signature" /></a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
       <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="design.html">Design</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="about.html#contact" class="nav-cta">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="design.html">Design</a>
+        <ul class="dropdown">
+          <li><a href="design.html#school">School</a></li>
+          <li><a href="design.html#compintelligence">Compintelligence</a></li>
+          <li><a href="design.html#hollistaggart">Hollis Taggart</a></li>
+          <li><a href="design.html#milieu">Milieu</a></li>
+          <li><a href="design.html#artdillo">Artdillo</a></li>
+          <li><a href="design.html#kappakappagamma">Kappa Kappa Gamma</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="art.html">Art</a>
+        <ul class="dropdown">
+          <li><a href="art.html#mixed-media">Mixed Media</a></li>
+          <li><a href="art.html#drawing">Drawing</a></li>
+          <li><a href="art.html#painting">Painting</a></li>
+          <li><a href="art.html#digital">Digital</a></li>
+          <li><a href="art.html#photography">Photography</a></li>
+          <li><a href="art.html#three-d">3D</a></li>
+          <li><a href="art.html#four-d">4D</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Me</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <!-- HERO: main photo + logo/name -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Graphic Design · Branding · Art</p>
-        <h1>Hi, I&rsquo;m <span class="brush">Bella
-          <svg viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
-            <path class="stroke-path" d="M2 22 C 60 8, 120 34, 180 18 C 220 8, 260 26, 298 14 L 298 34 C 240 42, 180 24, 120 36 C 70 44, 30 30, 2 34 Z"/>
-          </svg>
-        </span>.</h1>
-        <p class="lede">TODO: One or two sentences in your voice — e.g. "I'm a marketing and design student who turns brand strategy into work people actually stop scrolling for. Currently looking for a fall creative marketing internship."</p>
-        <div class="button-row">
-          <a href="design.html" class="btn btn-primary">See my design work</a>
-          <a href="about.html" class="btn btn-secondary">About me &amp; resume</a>
-        </div>
+  <!-- HERO -->
+  <section class="hero-stack">
+    <div class="hero-stack-copy">
+      <img class="sig-watermark" src="assets/branding/signature.png" alt="" aria-hidden="true" />
+      <h1>BELLA CIMINO</h1>
+      <p class="lede">TODO: one or two sentences in your voice, e.g. "I'm a marketing and design student who turns brand strategy into work people actually stop scrolling for. Currently looking for a fall creative marketing internship."</p>
+      <div class="button-row">
+        <a href="design.html" class="btn btn-primary">View Work</a>
+        <a href="about.html" class="btn btn-secondary">About Me</a>
       </div>
-      <div class="hero-media">
-        <img src="assets/images/home/hero.jpg" alt="TODO: replace with a photo of Bella" />
+    </div>
+    <div class="hero-stack-photo">
+      <img src="assets/images/home/venice-hero.jpg" alt="Isabella Cimino in Venice, Italy, seated by the Grand Canal" />
+    </div>
+  </section>
+
+  <!-- CREATIVE · BOLD · STRATEGIC, scroll velocity marquee -->
+  <section class="velocity-section" aria-hidden="true">
+    <div class="velocity-row velocity-row--serif" data-base-velocity="40">
+      <div class="velocity-track">
+        <span class="velocity-word">Creative</span><span class="velocity-dot">&middot;</span>
+        <span class="velocity-word">Bold</span><span class="velocity-dot">&middot;</span>
+        <span class="velocity-word">Strategic</span><span class="velocity-dot">&middot;</span>
+      </div>
+    </div>
+    <div class="velocity-row velocity-row--sans" data-base-velocity="-28">
+      <div class="velocity-track">
+        <span class="velocity-word">Creative</span><span class="velocity-dot">&middot;</span>
+        <span class="velocity-word">Bold</span><span class="velocity-dot">&middot;</span>
+        <span class="velocity-word">Strategic</span><span class="velocity-dot">&middot;</span>
       </div>
     </div>
   </section>
 
-  <!-- MONTAGE + quick intro -->
-  <section class="section section-alt">
-    <div class="wrap">
-      <div class="section-header">
-        <p class="eyebrow">A little more about me</p>
-        <h2>Design student, painter, and self-proclaimed pickleball fanatic.</h2>
-        <p>TODO: 3–4 sentences. Talk about your creative background, the internships/experience listed below, and the personality traits recruiters should remember you by — bubbly, determined, detail-obsessed, a good teammate. Keep it warm and specific, not generic.</p>
-      </div>
-      <div class="montage-grid">
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-1.jpg" alt="TODO: montage photo 1" /></a>
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-2.jpg" alt="TODO: montage photo 2" /></a>
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-3.jpg" alt="TODO: montage photo 3" /></a>
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-4.jpg" alt="TODO: montage photo 4" /></a>
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-5.jpg" alt="TODO: montage photo 5" /></a>
-        <a href="about.html" data-lightbox><img src="assets/images/home/montage-6.jpg" alt="TODO: montage photo 6" /></a>
-      </div>
+  <!-- A BIT ABOUT ME -->
+  <section class="section-sky">
+    <div class="section-header">
+      <span class="eyebrow">A Bit About Me</span>
+      <p class="section-quote">I'm a driven creative student who thrives on turning ideas into brands. When I'm not designing, I'm painting, running, or on the pickleball court with family.</p>
+    </div>
+
+    <div class="photo-stack">
+      <figure class="card" style="transform: translate(-50px, 8px) rotate(-8deg); z-index: 1;">
+        <img src="assets/images/home/montage-1.jpg" alt="Isabella Cimino" />
+        <figcaption>Us being us</figcaption>
+      </figure>
+      <figure class="card" style="transform: translate(40px, -12px) rotate(6deg); z-index: 2;">
+        <img src="assets/images/home/montage-2.jpg" alt="Isabella Cimino traveling in Tuscany, Italy" />
+        <figcaption>Painting day</figcaption>
+      </figure>
+      <figure class="card" style="transform: translate(-15px, -24px) rotate(-3deg); z-index: 3;">
+        <img src="assets/images/home/montage-3.jpg" alt="Isabella Cimino" />
+        <figcaption>Race day</figcaption>
+      </figure>
+      <figure class="card" style="transform: translate(55px, 16px) rotate(9deg); z-index: 4;">
+        <img src="assets/images/home/montage-4.jpg" alt="Isabella Cimino" />
+        <figcaption>Family time</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- QUICK LINKS to Design / Art / About -->
-  <section class="section">
+  <!-- EXPLORE MY WORK -->
+  <section class="section" style="text-align:center;">
     <div class="wrap">
-      <div class="section-header">
-        <p class="eyebrow">Explore the work</p>
-        <h2>Two ways to see what I make.</h2>
-      </div>
-      <div class="client-media" style="grid-template-columns: repeat(3, 1fr);">
-        <a href="design.html" style="aspect-ratio: 3/4; position:relative;">
-          <img src="assets/images/design/school/school-cover.jpg" alt="Design portfolio cover" />
+      <span class="eyebrow" style="justify-content:center;">Explore My Work</span>
+      <div class="tile-grid">
+        <a href="design.html" class="tile">
+          <div class="tile-title">Design</div>
+          <div class="tile-sub">Branding, typography, social content</div>
         </a>
-        <a href="art.html" style="aspect-ratio: 3/4; position:relative;">
-          <img src="assets/images/art/2d/painting/painting-1.jpg" alt="Art portfolio cover" />
+        <a href="art.html" class="tile">
+          <div class="tile-title">Art</div>
+          <div class="tile-sub">2D, 3D &amp; 4D work</div>
         </a>
-        <a href="about.html" style="aspect-ratio: 3/4; position:relative;">
-          <img src="assets/images/about/headshot.jpg" alt="About Bella" />
+        <a href="about.html" class="tile">
+          <div class="tile-title">About Me</div>
+          <div class="tile-sub">Resume, contact &amp; more</div>
         </a>
       </div>
     </div>
@@ -100,9 +140,13 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-row">
-    <span>&copy; <span id="year"></span> Bella Cimino. TODO: add your city/school here if you'd like.</span>
-    <a href="about.html#contact">Get in touch &rarr;</a>
+  <div class="footer-row">
+    <div>&copy; <span id="year"></span> Isabella Cimino</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/TODO" target="_blank" rel="noopener">Instagram</a>
+      <a href="about.html#contact">Contact</a>
+    </div>
   </div>
 </footer>
 
@@ -112,5 +156,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/velocity-marquee.js"></script>
 </body>
 </html>

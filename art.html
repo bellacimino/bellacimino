@@ -3,54 +3,115 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Art — Bella Cimino</title>
-<meta name="description" content="Fine art by Bella Cimino: 2D mixed media, drawing, painting, and photography, plus 3D sculpture and 4D time-based work." />
+<title>Art · Isabella Cimino</title>
+<meta name="description" content="Fine art by Isabella Cimino: 2D mixed media, drawing, painting, and digital work, plus 3D sculpture and 4D time-based work." />
 <link rel="icon" href="data:," />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <div class="build-note">
-  PLACEHOLDER SITE — swap files in /assets/images/art/&lt;medium&gt; with your own work, then edit the TODO captions.
+  PLACEHOLDER SITE: Photography and 4D still need real work, and every TODO caption below is still yours to write.
 </div>
 
 <header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="logo">Bella Cimino</a>
+    <a href="index.html" class="logo"><img src="assets/branding/signature.png" alt="Isabella Cimino signature" /></a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="design.html">Design</a></li>
-      <li><a href="art.html" aria-current="page">Art</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="about.html#contact" class="nav-cta">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="design.html">Design</a>
+        <ul class="dropdown">
+          <li><a href="design.html#school">School</a></li>
+          <li><a href="design.html#compintelligence">Compintelligence</a></li>
+          <li><a href="design.html#hollistaggart">Hollis Taggart</a></li>
+          <li><a href="design.html#milieu">Milieu</a></li>
+          <li><a href="design.html#artdillo">Artdillo</a></li>
+          <li><a href="design.html#kappakappagamma">Kappa Kappa Gamma</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="art.html" aria-current="page">Art</a>
+        <ul class="dropdown">
+          <li><a href="art.html#mixed-media">Mixed Media</a></li>
+          <li><a href="art.html#drawing">Drawing</a></li>
+          <li><a href="art.html#painting">Painting</a></li>
+          <li><a href="art.html#digital">Digital</a></li>
+          <li><a href="art.html#photography">Photography</a></li>
+          <li><a href="art.html#three-d">3D</a></li>
+          <li><a href="art.html#four-d">4D</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Me</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <section class="hero" style="padding-bottom: 1rem;">
-    <div class="wrap">
-      <p class="eyebrow">Fine art practice</p>
-      <h1>Made by <span class="brush">hand
-        <svg viewBox="0 0 220 40" preserveAspectRatio="none" aria-hidden="true">
-          <path class="stroke-path" d="M2 22 C 40 8, 90 34, 130 18 C 165 8, 195 26, 218 14 L 218 34 C 170 42, 125 24, 85 36 C 50 44, 20 30, 2 34 Z"/>
-        </svg>
-      </span>.</h1>
-      <p class="lede">TODO: a line about your art practice, e.g. "Painting and sculpture are where I slow down — most of this work started as a sketchbook idea before it became anything else." Organized by medium: 2D, 3D, and 4D.</p>
+  <section class="wrap" style="padding: 60px 0 1rem;">
+    <span class="eyebrow">Fine art practice</span>
+    <h1>Made by hand.</h1>
+    <p class="lede" style="max-width:56ch;color:var(--muted);font-size:1.05rem;">TODO: a line about your art practice, e.g. "Painting and sculpture are where I slow down. Most of this work started as a sketchbook idea before it became anything else." Organized by medium: 2D, 3D, and 4D.</p>
 
-      <div class="medium-nav">
-        <a href="#two-d">2D</a>
-        <a href="#three-d">3D</a>
-        <a href="#four-d">4D</a>
-      </div>
+    <div class="medium-nav">
+      <a href="#mixed-media">Mixed Media</a>
+      <a href="#drawing">Drawing</a>
+      <a href="#painting">Painting</a>
+      <a href="#digital">Digital</a>
+      <a href="#photography">Photography</a>
+      <a href="#three-d">3D</a>
+      <a href="#four-d">4D</a>
     </div>
   </section>
+
+  <!-- FEATURED PIECES GALLERY -->
+  <section class="wrap" style="padding-bottom: 40px;">
+    <span class="eyebrow">Featured Pieces</span>
+    <p style="color:var(--muted);max-width:56ch;margin-bottom:1.6rem;">A cross-section of the work below, spanning mixed media, painting, digital, and sculpture. Click any tile to view it fullscreen.</p>
+    <div class="gallery-grid-6" data-gallery data-gallery-target="art-lightbox">
+      <button class="gallery-thumb" data-image="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" data-caption="Heart Strings · mixed media" aria-label="View Heart Strings fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" alt="Heart Strings mixed media piece" />
+        <span class="gallery-thumb-label">Heart Strings</span>
+      </button>
+      <button class="gallery-thumb" data-image="assets/images/art/2d/painting/painting-venice-canal.jpg" data-caption="Venice Canal · painting" aria-label="View Venice Canal painting fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/2d/painting/painting-venice-canal.jpg" alt="Venice canal painting" />
+        <span class="gallery-thumb-label">Venice Canal</span>
+      </button>
+      <button class="gallery-thumb" data-image="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" data-caption="Eyes · oil pastel" aria-label="View oil pastel eyes fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" alt="Oil pastel close-up of eyes" />
+        <span class="gallery-thumb-label">Eyes</span>
+      </button>
+      <button class="gallery-thumb" data-image="assets/images/art/2d/digital/digital-underwater-dancer.jpg" data-caption="Underwater dancer · digital" aria-label="View underwater dancer fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/2d/digital/digital-underwater-dancer.jpg" alt="Digital painting of underwater dancer" />
+        <span class="gallery-thumb-label">Underwater Dancer</span>
+      </button>
+      <button class="gallery-thumb" data-image="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" data-caption="Glowing shell · cardboard sculpture" aria-label="View cardboard sculpture fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" alt="Cardboard sculpture with internal light" />
+        <span class="gallery-thumb-label">Glowing Shell</span>
+      </button>
+      <button class="gallery-thumb" data-image="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" data-caption="Raku vessel · ceramics" aria-label="View raku ceramic fullscreen">
+        <img class="gallery-thumb-img" src="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" alt="Raku-fired ceramic vessel" />
+        <span class="gallery-thumb-label">Raku Vessel</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="lightbox-full" id="art-lightbox" aria-hidden="true">
+    <button class="lightbox-full-close">Close ✕</button>
+    <button class="lightbox-full-nav lightbox-full-prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-full-nav lightbox-full-next" aria-label="Next image">&#8250;</button>
+    <div class="lightbox-full-stage">
+      <img class="lightbox-full-image" src="" alt="" />
+      <p class="lightbox-full-caption"></p>
+      <div class="lightbox-full-dots"></div>
+    </div>
+  </div>
 
   <!-- 2D -->
   <section class="wrap" id="two-d">
@@ -60,31 +121,54 @@
           <p class="eyebrow">2D</p>
           <h2>Two-dimensional work</h2>
         </div>
-        <p>Mixed media, drawing, painting, and photography.</p>
+        <p>Mixed media, drawing, painting, digital, and photography.</p>
       </div>
 
-      <p class="subgrid-label">Mixed Media</p>
-      <div class="gallery-grid">
-        <a href="assets/images/art/2d/mixed-media/mixed-media-1.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-1.jpg" alt="TODO: mixed media piece 1" /></a>
-        <a href="assets/images/art/2d/mixed-media/mixed-media-2.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-2.jpg" alt="TODO: mixed media piece 2" /></a>
-        <a href="assets/images/art/2d/mixed-media/mixed-media-3.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-3.jpg" alt="TODO: mixed media piece 3" /></a>
+      <p class="subgrid-label" id="mixed-media">Mixed Media</p>
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" alt="Heart Strings · anatomical heart wrapped in thread and pins with handwritten words" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-heart-strings-graphic.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-heart-strings-graphic.jpg" alt="Heart Strings companion digital graphic" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-mother-daughter-collage.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-mother-daughter-collage.jpg" alt="Mother-daughter scrapbook collage with animal line drawings and pressed flowers" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-candy-hearts.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-candy-hearts.jpg" alt="Painted oversized conversation heart candies with a small figure" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-dreaming.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-dreaming.jpg" alt="Dreaming · colored pencil portrait with a glitch effect" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-the-break-up.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-the-break-up.jpg" alt="The Break Up · paper cutout figure on crumpled notebook paper" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-crab-print.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-crab-print.jpg" alt="Repeating blue crab print pattern" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-hydrangea-newspaper.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-hydrangea-newspaper.jpg" alt="Painted hydrangea bouquet over vintage newspaper collage" /></a>
+        <a href="assets/images/art/2d/mixed-media/mixed-media-fabric-hands-installation.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-fabric-hands-installation.jpg" alt="Fabric patchwork hands reaching toward each other, wall installation" /></a>
       </div>
 
-      <p class="subgrid-label">Drawing</p>
-      <div class="gallery-grid">
-        <a href="assets/images/art/2d/drawing/drawing-1.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-1.jpg" alt="TODO: drawing 1" /></a>
-        <a href="assets/images/art/2d/drawing/drawing-2.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-2.jpg" alt="TODO: drawing 2" /></a>
-        <a href="assets/images/art/2d/drawing/drawing-3.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-3.jpg" alt="TODO: drawing 3" /></a>
+      <p class="subgrid-label" id="drawing">Drawing</p>
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="assets/images/art/2d/drawing/drawing-hands-colored-pencil.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-hands-colored-pencil.jpg" alt="Colored pencil drawing of two intertwined hands" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-battered-womans-face.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-battered-womans-face.jpg" alt="Colored pencil close-up portrait" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-off-grid.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-off-grid.jpg" alt="Off Grid · colored pencil figure piece with glitch motif" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-charcoal-poses.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-charcoal-poses.jpg" alt="Four-panel charcoal figure studies" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-anchiceratops-skull.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-anchiceratops-skull.jpg" alt="Graphite study of an Anchiceratops dinosaur skull" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-nude-on-divan-study.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-nude-on-divan-study.jpg" alt="Graphite copy study after Paul Delvaux's Nude on Divan" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-portrait-study.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-portrait-study.jpg" alt="Graphite portrait study, three-quarter view" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-bottle-concept-sketch.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-bottle-concept-sketch.jpg" alt="Graphite product design sketch of a bottle, multiple angles" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-branches-study.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-branches-study.jpg" alt="Graphite still-life study of bare branches" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-portrait-sweater-necklace.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-portrait-sweater-necklace.jpg" alt="Graphite portrait of a young woman in a sweater with a star necklace" /></a>
+        <a href="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" alt="Vivid oil pastel close-up of two eyes and nose" /></a>
       </div>
 
-      <p class="subgrid-label">Painting</p>
-      <div class="gallery-grid">
-        <a href="assets/images/art/2d/painting/painting-1.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-1.jpg" alt="TODO: painting 1" /></a>
-        <a href="assets/images/art/2d/painting/painting-2.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-2.jpg" alt="TODO: painting 2" /></a>
-        <a href="assets/images/art/2d/painting/painting-3.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-3.jpg" alt="TODO: painting 3" /></a>
+      <p class="subgrid-label" id="painting">Painting</p>
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="assets/images/art/2d/painting/painting-venice-canal.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-venice-canal.jpg" alt="Painting of a Venice canal with gondolas" /></a>
+        <a href="assets/images/art/2d/painting/painting-oyster-pearl.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-oyster-pearl.jpg" alt="Painting of an oyster shell with a pearl" /></a>
+        <a href="assets/images/art/2d/painting/painting-sneakers-sunset.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-sneakers-sunset.jpg" alt="Painting of two people's legs and sneakers at sunset" /></a>
+        <a href="assets/images/art/2d/painting/painting-color-wheel-study.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-color-wheel-study.jpg" alt="Color theory study pairing a sunset landscape with a painted color wheel" /></a>
       </div>
 
-      <p class="subgrid-label">Photography</p>
+      <p class="subgrid-label" id="digital">Digital</p>
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="assets/images/art/2d/digital/digital-puppets-on-a-string.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-puppets-on-a-string.jpg" alt="Digital illustration of two marionette figures controlled by stringed hands" /></a>
+        <a href="assets/images/art/2d/digital/digital-cherry-pop.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-cherry-pop.jpg" alt="Digital painting of lips with cherry lollipops labeled cherry and pop" /></a>
+        <a href="assets/images/art/2d/digital/digital-underwater-dancer.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-underwater-dancer.jpg" alt="Digital painting of a woman dancing underwater with reaching hands below" /></a>
+        <a href="assets/images/art/2d/digital/digital-lighthouse-animated.gif" data-lightbox><img src="assets/images/art/2d/digital/digital-lighthouse-animated.gif" alt="Animated digital artwork of a lighthouse with moving waves" /></a>
+      </div>
+
+      <p class="subgrid-label" id="photography">Photography</p>
       <div class="gallery-grid">
         <a href="assets/images/art/2d/photography/photography-1.jpg" data-lightbox><img src="assets/images/art/2d/photography/photography-1.jpg" alt="TODO: photograph 1" /></a>
         <a href="assets/images/art/2d/photography/photography-2.jpg" data-lightbox><img src="assets/images/art/2d/photography/photography-2.jpg" alt="TODO: photograph 2" /></a>
@@ -99,12 +183,22 @@
           <p class="eyebrow">3D</p>
           <h2>Three-dimensional work</h2>
         </div>
-        <p>TODO: a line about your sculpture practice — materials, process, or a favorite piece.</p>
+        <p>TODO: a line about your 3D practice, ceramics, wood, paper, fiber, and 3D-printed design work.</p>
       </div>
-      <div class="gallery-grid">
-        <a href="assets/images/art/3d/sculpture-1.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-1.jpg" alt="TODO: sculpture 1" /></a>
-        <a href="assets/images/art/3d/sculpture-2.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-2.jpg" alt="TODO: sculpture 2" /></a>
-        <a href="assets/images/art/3d/sculpture-3.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-3.jpg" alt="TODO: sculpture 3" /></a>
+      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <a href="assets/images/art/3d/sculpture-ceramic-historical-vase.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-historical-vase.jpg" alt="Hand-built ceramic vase with blue floral and dotted line design" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-suiban-styled.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-suiban-styled.jpg" alt="Slab-built ceramic suiban styled with a dahlia flower arrangement" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-suiban-detail.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-suiban-detail.jpg" alt="Detail of ceramic suiban glaze edges" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" alt="Raku-fired ceramic vessel with blue crackle glaze" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-raku-2.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-raku-2.jpg" alt="Raku-fired ceramic vessel, abstract organic form" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-ritual-set.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-ritual-set.jpg" alt="Ceramic ritual set, small grouped vessels on a tray" /></a>
+        <a href="assets/images/art/3d/sculpture-ceramic-terra-sigillata.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-terra-sigillata.jpg" alt="Terra sigillata ceramic vase in burgundy tones" /></a>
+        <a href="assets/images/art/3d/sculpture-clay-coral-wall-piece.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-clay-coral-wall-piece.jpg" alt="Sculpted clay coral and mushroom forms mounted on a painted panel" /></a>
+        <a href="assets/images/art/3d/sculpture-wood-geometric-assemblage.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-wood-geometric-assemblage.jpg" alt="Interlocking wood block geometric sculpture" /></a>
+        <a href="assets/images/art/3d/sculpture-3d-printed-hammerhead-shark.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-3d-printed-hammerhead-shark.jpg" alt="3D-printed articulated hammerhead shark model" /></a>
+        <a href="assets/images/art/3d/sculpture-paper-moscow-mule.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-paper-moscow-mule.jpg" alt="Paper-craft sculpture of a Moscow Mule copper mug" /></a>
+        <a href="assets/images/art/3d/sculpture-fiber-wearable-top.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-fiber-wearable-top.jpg" alt="Fiber-art wearable top with a heart patch" /></a>
+        <a href="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" alt="Layered cardboard sculptural shell with an internal light, gallery installation" /></a>
       </div>
     </div>
 
@@ -115,10 +209,10 @@
           <p class="eyebrow">4D</p>
           <h2>Time-based work</h2>
         </div>
-        <p>TODO: a line about your motion/time-based or installation work — video, animation, performance documentation.</p>
+        <p>TODO: a line about your motion/time-based or installation work, video, animation, performance documentation.</p>
       </div>
       <div class="gallery-grid">
-        <a href="assets/images/art/4d/motion-1.jpg" data-lightbox><img src="assets/images/art/4d/motion-1.jpg" alt="TODO: 4D work 1 — replace with a still or link to video" /></a>
+        <a href="assets/images/art/4d/motion-1.jpg" data-lightbox><img src="assets/images/art/4d/motion-1.jpg" alt="TODO: 4D work 1 · replace with a still or link to video" /></a>
         <a href="assets/images/art/4d/motion-2.jpg" data-lightbox><img src="assets/images/art/4d/motion-2.jpg" alt="TODO: 4D work 2" /></a>
         <a href="assets/images/art/4d/motion-3.jpg" data-lightbox><img src="assets/images/art/4d/motion-3.jpg" alt="TODO: 4D work 3" /></a>
       </div>
@@ -127,9 +221,13 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-row">
-    <span>&copy; <span id="year"></span> Bella Cimino.</span>
-    <a href="index.html">Back to home &rarr;</a>
+  <div class="footer-row">
+    <div>&copy; <span id="year"></span> Isabella Cimino</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/TODO" target="_blank" rel="noopener">Instagram</a>
+      <a href="about.html#contact">Contact</a>
+    </div>
   </div>
 </footer>
 
@@ -139,5 +237,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/gallery-lightbox.js"></script>
 </body>
 </html>
