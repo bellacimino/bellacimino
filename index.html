@@ -26,7 +26,7 @@
     <ul class="nav-links">
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li class="has-dropdown">
-        <a href="design.html">Design</a>
+        <a href="design.html">Design<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="design.html#school">School</a></li>
           <li><a href="design.html#compintelligence">Compintelligence</a></li>
@@ -37,7 +37,7 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="art.html">Art</a>
+        <a href="art.html">Art<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="art.html#mixed-media">Mixed Media</a></li>
           <li><a href="art.html#drawing">Drawing</a></li>
@@ -96,23 +96,19 @@
       <p class="section-quote">I'm a driven creative student who thrives on turning ideas into brands. When I'm not designing, I'm painting, running, or on the pickleball court with family.</p>
     </div>
 
-    <div class="photo-stack">
-      <figure class="card" style="transform: translate(-50px, 8px) rotate(-8deg); z-index: 1;">
-        <img src="assets/images/home/montage-1.jpg" alt="Isabella Cimino" />
-        <figcaption>Us being us</figcaption>
-      </figure>
-      <figure class="card" style="transform: translate(40px, -12px) rotate(6deg); z-index: 2;">
-        <img src="assets/images/home/montage-2.jpg" alt="Isabella Cimino traveling in Tuscany, Italy" />
-        <figcaption>Painting day</figcaption>
-      </figure>
-      <figure class="card" style="transform: translate(-15px, -24px) rotate(-3deg); z-index: 3;">
-        <img src="assets/images/home/montage-3.jpg" alt="Isabella Cimino" />
-        <figcaption>Race day</figcaption>
-      </figure>
-      <figure class="card" style="transform: translate(55px, 16px) rotate(9deg); z-index: 4;">
-        <img src="assets/images/home/montage-4.jpg" alt="Isabella Cimino" />
-        <figcaption>Family time</figcaption>
-      </figure>
+    <div class="infinite-gallery" id="home-gallery" role="region" aria-label="Photo gallery of Isabella Cimino">
+      <div class="infinite-gallery-track">
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-1.jpg" alt="Isabella Cimino" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/gallery-exhibition.jpg" alt="Isabella Cimino at a gallery exhibition opening" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-2.jpg" alt="Isabella Cimino traveling in Tuscany, Italy" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/gallery-kayaking.jpg" alt="Isabella Cimino kayaking on the Chicago River" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-3.jpg" alt="Isabella Cimino" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/gallery-porsche.jpg" alt="Isabella Cimino next to a Porsche 911" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-4.jpg" alt="Isabella Cimino" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-5.jpg" alt="Isabella Cimino" /></div>
+        <div class="infinite-gallery-item"><img src="assets/images/home/montage-6.jpg" alt="Isabella Cimino at a University of Michigan football game" /></div>
+      </div>
+      <p class="infinite-gallery-hint">Scroll, use arrow keys, or swipe to explore</p>
     </div>
   </section>
 
@@ -143,8 +139,8 @@
   <div class="footer-row">
     <div>&copy; <span id="year"></span> Isabella Cimino</div>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.instagram.com/TODO" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/isabellajcimino" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/bellajcimino" target="_blank" rel="noopener">Instagram</a>
       <a href="about.html#contact">Contact</a>
     </div>
   </div>
@@ -157,5 +153,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/velocity-marquee.js"></script>
+<script src="js/infinite-gallery.js"></script>
 </body>
 </html>

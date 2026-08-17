@@ -1,4 +1,4 @@
-// Bella Cimino Portfolio — shared behavior
+// Bella Cimino Portfolio, shared behavior
 
 document.addEventListener("DOMContentLoaded", () => {
   // Mobile nav toggle
@@ -41,6 +41,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") close();
+    });
+  }
+
+  // Nav dropdowns (Design / Art subsections), tap-to-open on touch devices,
+  // since hover isn't available there. Desktop relies on CSS :hover/:focus-within.
+  if (window.matchMedia("(hover: none)").matches) {
+    document.querySelectorAll(".has-dropdown > a").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        const parentLi = this.parentElement;
+        if (window.innerWidth > 820 && !parentLi.classList.contains("dropdown-open")) {
+          e.preventDefault();
+          document.querySelectorAll(".has-dropdown.dropdown-open").forEach((li) => {
+            if (li !== parentLi) li.classList.remove("dropdown-open");
+          });
+          parentLi.classList.add("dropdown-open");
+        }
+      });
+    });
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".has-dropdown")) {
+        document.querySelectorAll(".has-dropdown.dropdown-open").forEach((li) =>
+          li.classList.remove("dropdown-open")
+        );
+      }
     });
   }
 

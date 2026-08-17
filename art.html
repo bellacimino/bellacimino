@@ -26,7 +26,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
-        <a href="design.html">Design</a>
+        <a href="design.html">Design<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="design.html#school">School</a></li>
           <li><a href="design.html#compintelligence">Compintelligence</a></li>
@@ -37,7 +37,7 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="art.html" aria-current="page">Art</a>
+        <a href="art.html" aria-current="page">Art<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="art.html#mixed-media">Mixed Media</a></li>
           <li><a href="art.html#drawing">Drawing</a></li>
@@ -57,7 +57,6 @@
   <section class="wrap" style="padding: 60px 0 1rem;">
     <span class="eyebrow">Fine art practice</span>
     <h1>Made by hand.</h1>
-    <p class="lede" style="max-width:56ch;color:var(--muted);font-size:1.05rem;">TODO: a line about your art practice, e.g. "Painting and sculpture are where I slow down. Most of this work started as a sketchbook idea before it became anything else." Organized by medium: 2D, 3D, and 4D.</p>
 
     <div class="medium-nav">
       <a href="#mixed-media">Mixed Media</a>
@@ -69,49 +68,6 @@
       <a href="#four-d">4D</a>
     </div>
   </section>
-
-  <!-- FEATURED PIECES GALLERY -->
-  <section class="wrap" style="padding-bottom: 40px;">
-    <span class="eyebrow">Featured Pieces</span>
-    <p style="color:var(--muted);max-width:56ch;margin-bottom:1.6rem;">A cross-section of the work below, spanning mixed media, painting, digital, and sculpture. Click any tile to view it fullscreen.</p>
-    <div class="gallery-grid-6" data-gallery data-gallery-target="art-lightbox">
-      <button class="gallery-thumb" data-image="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" data-caption="Heart Strings · mixed media" aria-label="View Heart Strings fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" alt="Heart Strings mixed media piece" />
-        <span class="gallery-thumb-label">Heart Strings</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/art/2d/painting/painting-venice-canal.jpg" data-caption="Venice Canal · painting" aria-label="View Venice Canal painting fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/2d/painting/painting-venice-canal.jpg" alt="Venice canal painting" />
-        <span class="gallery-thumb-label">Venice Canal</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" data-caption="Eyes · oil pastel" aria-label="View oil pastel eyes fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/2d/drawing/drawing-oil-pastel-eyes-closeup.jpg" alt="Oil pastel close-up of eyes" />
-        <span class="gallery-thumb-label">Eyes</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/art/2d/digital/digital-underwater-dancer.jpg" data-caption="Underwater dancer · digital" aria-label="View underwater dancer fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/2d/digital/digital-underwater-dancer.jpg" alt="Digital painting of underwater dancer" />
-        <span class="gallery-thumb-label">Underwater Dancer</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" data-caption="Glowing shell · cardboard sculpture" aria-label="View cardboard sculpture fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/3d/sculpture-cardboard-glowing-shell.jpg" alt="Cardboard sculpture with internal light" />
-        <span class="gallery-thumb-label">Glowing Shell</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" data-caption="Raku vessel · ceramics" aria-label="View raku ceramic fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/art/3d/sculpture-ceramic-raku-1.jpg" alt="Raku-fired ceramic vessel" />
-        <span class="gallery-thumb-label">Raku Vessel</span>
-      </button>
-    </div>
-  </section>
-
-  <div class="lightbox-full" id="art-lightbox" aria-hidden="true">
-    <button class="lightbox-full-close">Close ✕</button>
-    <button class="lightbox-full-nav lightbox-full-prev" aria-label="Previous image">&#8249;</button>
-    <button class="lightbox-full-nav lightbox-full-next" aria-label="Next image">&#8250;</button>
-    <div class="lightbox-full-stage">
-      <img class="lightbox-full-image" src="" alt="" />
-      <p class="lightbox-full-caption"></p>
-      <div class="lightbox-full-dots"></div>
-    </div>
-  </div>
 
   <!-- 2D -->
   <section class="wrap" id="two-d">
@@ -125,7 +81,7 @@
       </div>
 
       <p class="subgrid-label" id="mixed-media">Mixed Media</p>
-      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="gallery-grid">
         <a href="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-heart-strings.jpg" alt="Heart Strings · anatomical heart wrapped in thread and pins with handwritten words" /></a>
         <a href="assets/images/art/2d/mixed-media/mixed-media-heart-strings-graphic.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-heart-strings-graphic.jpg" alt="Heart Strings companion digital graphic" /></a>
         <a href="assets/images/art/2d/mixed-media/mixed-media-mother-daughter-collage.jpg" data-lightbox><img src="assets/images/art/2d/mixed-media/mixed-media-mother-daughter-collage.jpg" alt="Mother-daughter scrapbook collage with animal line drawings and pressed flowers" /></a>
@@ -138,7 +94,7 @@
       </div>
 
       <p class="subgrid-label" id="drawing">Drawing</p>
-      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="gallery-grid">
         <a href="assets/images/art/2d/drawing/drawing-hands-colored-pencil.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-hands-colored-pencil.jpg" alt="Colored pencil drawing of two intertwined hands" /></a>
         <a href="assets/images/art/2d/drawing/drawing-battered-womans-face.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-battered-womans-face.jpg" alt="Colored pencil close-up portrait" /></a>
         <a href="assets/images/art/2d/drawing/drawing-off-grid.jpg" data-lightbox><img src="assets/images/art/2d/drawing/drawing-off-grid.jpg" alt="Off Grid · colored pencil figure piece with glitch motif" /></a>
@@ -153,7 +109,7 @@
       </div>
 
       <p class="subgrid-label" id="painting">Painting</p>
-      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="gallery-grid">
         <a href="assets/images/art/2d/painting/painting-venice-canal.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-venice-canal.jpg" alt="Painting of a Venice canal with gondolas" /></a>
         <a href="assets/images/art/2d/painting/painting-oyster-pearl.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-oyster-pearl.jpg" alt="Painting of an oyster shell with a pearl" /></a>
         <a href="assets/images/art/2d/painting/painting-sneakers-sunset.jpg" data-lightbox><img src="assets/images/art/2d/painting/painting-sneakers-sunset.jpg" alt="Painting of two people's legs and sneakers at sunset" /></a>
@@ -161,7 +117,7 @@
       </div>
 
       <p class="subgrid-label" id="digital">Digital</p>
-      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="gallery-grid">
         <a href="assets/images/art/2d/digital/digital-puppets-on-a-string.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-puppets-on-a-string.jpg" alt="Digital illustration of two marionette figures controlled by stringed hands" /></a>
         <a href="assets/images/art/2d/digital/digital-cherry-pop.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-cherry-pop.jpg" alt="Digital painting of lips with cherry lollipops labeled cherry and pop" /></a>
         <a href="assets/images/art/2d/digital/digital-underwater-dancer.jpg" data-lightbox><img src="assets/images/art/2d/digital/digital-underwater-dancer.jpg" alt="Digital painting of a woman dancing underwater with reaching hands below" /></a>
@@ -185,7 +141,7 @@
         </div>
         <p>TODO: a line about your 3D practice, ceramics, wood, paper, fiber, and 3D-printed design work.</p>
       </div>
-      <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="gallery-grid">
         <a href="assets/images/art/3d/sculpture-ceramic-historical-vase.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-historical-vase.jpg" alt="Hand-built ceramic vase with blue floral and dotted line design" /></a>
         <a href="assets/images/art/3d/sculpture-ceramic-suiban-styled.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-suiban-styled.jpg" alt="Slab-built ceramic suiban styled with a dahlia flower arrangement" /></a>
         <a href="assets/images/art/3d/sculpture-ceramic-suiban-detail.jpg" data-lightbox><img src="assets/images/art/3d/sculpture-ceramic-suiban-detail.jpg" alt="Detail of ceramic suiban glaze edges" /></a>
@@ -224,8 +180,8 @@
   <div class="footer-row">
     <div>&copy; <span id="year"></span> Isabella Cimino</div>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.instagram.com/TODO" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/isabellajcimino" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/bellajcimino" target="_blank" rel="noopener">Instagram</a>
       <a href="about.html#contact">Contact</a>
     </div>
   </div>
@@ -237,6 +193,5 @@
 </div>
 
 <script src="js/main.js"></script>
-<script src="js/gallery-lightbox.js"></script>
 </body>
 </html>
