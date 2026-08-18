@@ -5,10 +5,6 @@
 // so scrolling continues naturally to the rest of the page.
 
 (function () {
-  const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-  ).matches;
-
   function initGallery(container) {
     const track = container.querySelector(".infinite-gallery-track");
     const items = Array.from(container.querySelectorAll(".infinite-gallery-item"));
@@ -20,10 +16,6 @@
     const NEAR_LIMIT = 1.15; // photos "passed" before fully faded near the viewer
 
     let position = 0; // 0..count-1, clamped (not wrapping)
-    let lastInteraction = performance.now();
-    let lastTime = performance.now();
-    const AUTO_SPEED = 0.12; // photos per second when idle
-    const RESUME_DELAY = 3000; // ms of inactivity before autoplay resumes
 
     function clamp(v) {
       return Math.max(0, Math.min(count - 1, v));
@@ -47,10 +39,6 @@
       });
     }
 
-    function markInteraction() {
-      lastInteraction = performance.now();
-    }
-
     // Mouse wheel: capture while there's still room to move in that
     // direction, release (let the page scroll normally) at either end.
     container.addEventListener(
@@ -61,7 +49,6 @@
         if (atEnd) return; // let the page keep scrolling past the gallery
         e.preventDefault();
         position = clamp(position + e.deltaY * 0.012);
-        markInteraction();
         render();
       },
       { passive: false }
@@ -73,12 +60,10 @@
       if (e.key === "ArrowDown" || e.key === "ArrowRight") {
         e.preventDefault();
         position = clamp(position + 1);
-        markInteraction();
         render();
       } else if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
         e.preventDefault();
         position = clamp(position - 1);
-        markInteraction();
         render();
       }
     });
@@ -103,24 +88,12 @@
         e.preventDefault();
         position = clamp(position + dy * 0.02);
         touchStartY = e.touches[0].clientY;
-        markInteraction();
         render();
       },
       { passive: false }
     );
 
-    function loop(now) {
-      const dt = Math.min(now - lastTime, 50) / 1000;
-      lastTime = now;
-      if (!prefersReducedMotion && now - lastInteraction > RESUME_DELAY && position < count - 1) {
-        position = clamp(position + AUTO_SPEED * dt);
-        render();
-      }
-      requestAnimationFrame(loop);
-    }
-
     render();
-    requestAnimationFrame(loop);
   }
 
   document.addEventListener("DOMContentLoaded", () => {

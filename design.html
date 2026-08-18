@@ -13,10 +13,6 @@
 </head>
 <body>
 
-<div class="build-note">
-  PLACEHOLDER SITE: Compintelligence still needs real images, and every TODO caption below is still yours to write.
-</div>
-
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="logo"><img src="assets/branding/signature.png" alt="Isabella Cimino signature" /></a>
@@ -26,7 +22,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
-        <a href="design.html" aria-current="page">Design</a>
+        <a href="design.html" aria-current="page">Design<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="design.html#school">School</a></li>
           <li><a href="design.html#compintelligence">Compintelligence</a></li>
@@ -37,15 +33,13 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="art.html">Art</a>
+        <a href="art.html">Art<span class="nav-caret" aria-hidden="true"></span></a>
         <ul class="dropdown">
           <li><a href="art.html#mixed-media">Mixed Media</a></li>
           <li><a href="art.html#drawing">Drawing</a></li>
           <li><a href="art.html#painting">Painting</a></li>
           <li><a href="art.html#digital">Digital</a></li>
-          <li><a href="art.html#photography">Photography</a></li>
           <li><a href="art.html#three-d">3D</a></li>
-          <li><a href="art.html#four-d">4D</a></li>
         </ul>
       </li>
       <li><a href="about.html">About Me</a></li>
@@ -57,51 +51,7 @@
   <section class="wrap" style="padding: 60px 0 1rem;">
     <span class="eyebrow">Selected client &amp; academic work</span>
     <h1>Design work</h1>
-    <p class="lede" style="max-width:56ch;color:var(--muted);font-size:1.05rem;">TODO: one line framing your design practice, e.g. "Branding, typography, and social content for six clients across school, internships, and Greek life."</p>
   </section>
-
-  <!-- FEATURED HIGHLIGHTS GALLERY -->
-  <section class="wrap" style="padding-bottom: 40px;">
-    <span class="eyebrow">Featured Highlights</span>
-    <p style="color:var(--muted);max-width:56ch;margin-bottom:1.6rem;">A quick cross-section of the work below, click any tile to view it fullscreen.</p>
-    <div class="gallery-grid-6" data-gallery data-gallery-target="design-lightbox">
-      <button class="gallery-thumb" data-image="assets/images/design/milieu/milieu-1.jpg" data-caption="Milieu · skincare ad creative" aria-label="View Milieu ad creative fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/milieu/milieu-1.jpg" alt="Milieu skincare ad" />
-        <span class="gallery-thumb-label">Milieu</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/design/hollistaggart/hollistaggart-1.jpg" data-caption="Hollis Taggart · John Knuth exhibition poster" aria-label="View Hollis Taggart poster fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/hollistaggart/hollistaggart-1.jpg" alt="Hollis Taggart John Knuth poster" />
-        <span class="gallery-thumb-label">Hollis Taggart</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/design/kappakappagamma/kkg-banner-design.jpg" data-caption="Kappa Kappa Gamma · Bid Day banner design" aria-label="View Kappa Kappa Gamma banner fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/kappakappagamma/kkg-banner-design.jpg" alt="Kappa Kappa Gamma Bid Day banner" />
-        <span class="gallery-thumb-label">Kappa Kappa Gamma</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/design/artdillo/artdillo-brandbook-cover.jpg" data-caption="Artdillo Studios · brand book cover" aria-label="View Artdillo brand book fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/artdillo/artdillo-brandbook-cover.jpg" alt="Artdillo Studios brand book cover" />
-        <span class="gallery-thumb-label">Artdillo Studios</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/design/school/school-cimino-label-1.jpg" data-caption="School · Cimino Family label design" aria-label="View Cimino Family label fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/school/school-cimino-label-1.jpg" alt="Cimino Family label design" />
-        <span class="gallery-thumb-label">Cimino Family</span>
-      </button>
-      <button class="gallery-thumb" data-image="assets/images/design/school/school-typeposters-1.jpg" data-caption="School · Rockwell typography research" aria-label="View typography research poster fullscreen">
-        <img class="gallery-thumb-img" src="assets/images/design/school/school-typeposters-1.jpg" alt="Rockwell typography research poster" />
-        <span class="gallery-thumb-label">Typography Research</span>
-      </button>
-    </div>
-  </section>
-
-  <div class="lightbox-full" id="design-lightbox" aria-hidden="true">
-    <button class="lightbox-full-close">Close ✕</button>
-    <button class="lightbox-full-nav lightbox-full-prev" aria-label="Previous image">&#8249;</button>
-    <button class="lightbox-full-nav lightbox-full-next" aria-label="Next image">&#8250;</button>
-    <div class="lightbox-full-stage">
-      <img class="lightbox-full-image" src="" alt="" />
-      <p class="lightbox-full-caption"></p>
-      <div class="lightbox-full-dots"></div>
-    </div>
-  </div>
 
   <!-- SCHOOL -->
   <section class="wrap">
@@ -109,21 +59,20 @@
       <div class="client-info">
         <p class="eyebrow">01 · School Projects</p>
         <h3>Two academic projects</h3>
-        <p>TODO: intro line covering both projects below, course names, semester, and what each brief asked for.</p>
         <div class="tag-row">
           <span class="tag">Branding</span>
           <span class="tag">Typography</span>
           <span class="tag">Research</span>
         </div>
       </div>
-      <div class="client-media" style="display:block;">
+      <div style="display:block;">
         <p class="subgrid-label" style="margin-top:0;">Cimino Family · Label Design</p>
         <div class="client-media" style="margin-bottom: 1.6rem;">
           <a href="assets/images/design/school/school-cimino-label-1.jpg" data-lightbox><img src="assets/images/design/school/school-cimino-label-1.jpg" alt="Cimino Family wine label design, cyan background" /></a>
           <a href="assets/images/design/school/school-cimino-label-2.jpg" data-lightbox><img src="assets/images/design/school/school-cimino-label-2.jpg" alt="Cimino Family label logo mark, line art" /></a>
         </div>
         <p class="subgrid-label">Rockwell · Typography Research</p>
-        <div class="client-media" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="client-media">
           <a href="assets/images/design/school/school-typeposters-1.jpg" data-lightbox><img src="assets/images/design/school/school-typeposters-1.jpg" alt="Rockwell typography research poster · Modernism in Monotype" /></a>
           <a href="assets/images/design/school/school-typeposters-2.jpg" data-lightbox><img src="assets/images/design/school/school-typeposters-2.jpg" alt="Rockwell typography research poster · Industrialization of Type" /></a>
           <a href="assets/images/design/school/school-typeposters-3.jpg" data-lightbox><img src="assets/images/design/school/school-typeposters-3.jpg" alt="Rockwell typography research poster · large display type breakdown" /></a>
@@ -137,17 +86,20 @@
     <article class="client-block" id="compintelligence">
       <div class="client-info">
         <p class="eyebrow">02 · Compintelligence</p>
-        <h3>TODO: Role / project title</h3>
-        <p>TODO: What you did at Compintelligence, deliverables, tools, and impact.</p>
+        <h3>Social &amp; marketing graphics</h3>
+        <p>Social and marketing graphics for CompIntelligence and its CompAnalytics platform — client welcomes, webinar promos, blog features, and product messaging.</p>
         <div class="tag-row">
           <span class="tag">Social Content</span>
           <span class="tag">Brand Design</span>
         </div>
       </div>
       <div class="client-media">
-        <a href="assets/images/design/compintelligence/compintelligence-1.jpg" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-1.jpg" alt="TODO: Compintelligence work 1" /></a>
-        <a href="assets/images/design/compintelligence/compintelligence-2.jpg" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-2.jpg" alt="TODO: Compintelligence work 2" /></a>
-        <a href="assets/images/design/compintelligence/compintelligence-3.jpg" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-3.jpg" alt="TODO: Compintelligence work 3" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-1-bessemer-welcome.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-1-bessemer-welcome.png" alt="CompAnalytics social graphic welcoming Bessemer Trust to the platform" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-2-fpa-challenges.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-2-fpa-challenges.png" alt="CompAnalytics social graphic on Finance and FP&amp;A workforce planning challenges" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-3-workforce-cost-data.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-3-workforce-cost-data.png" alt="CompAnalytics social graphic, We Already Have Workforce Cost Data" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-4-july-4th.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-4-july-4th.png" alt="CompIntelligence 250 Years 4th of July social graphic" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-5-webinar-promo.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-5-webinar-promo.png" alt="CompIntelligence webinar promo, Workforce Is Your Biggest Expense" /></a>
+        <a href="assets/images/design/compintelligence/compintelligence-6-agentic-ai-blog.png" data-lightbox><img src="assets/images/design/compintelligence/compintelligence-6-agentic-ai-blog.png" alt="CompIntelligence blog graphic, Governed Agentic AI, featuring Michael Dennis" /></a>
       </div>
     </article>
 
@@ -155,15 +107,15 @@
     <article class="client-block" id="hollistaggart">
       <div class="client-info">
         <p class="eyebrow">03 · Hollis Taggart</p>
-        <h3>TODO: Role / project title</h3>
-        <p>TODO: Exhibition posters, event graphics, and a logo lockup for "John Knuth: The Hot Garden," plus a piece for the group show "The Figure Remains" at the Downtown gallery. Add your role and the outcome.</p>
+        <h3>Exhibition &amp; event design</h3>
+        <p>Exhibition posters, event graphics, and a logo lockup for "John Knuth: The Hot Garden," plus a piece for the group show "The Figure Remains" at the Downtown gallery.</p>
         <div class="tag-row">
           <span class="tag">Exhibition Design</span>
           <span class="tag">Event Graphics</span>
           <span class="tag">Logo Design</span>
         </div>
       </div>
-      <div class="client-media" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="client-media">
         <a href="assets/images/design/hollistaggart/hollistaggart-1.jpg" data-lightbox><img src="assets/images/design/hollistaggart/hollistaggart-1.jpg" alt="Hollis Taggart Downtown · John Knuth exhibition poster" /></a>
         <a href="assets/images/design/hollistaggart/hollistaggart-2.jpg" data-lightbox><img src="assets/images/design/hollistaggart/hollistaggart-2.jpg" alt="Hollis Taggart Downtown gallery new space announcement" /></a>
         <a href="assets/images/design/hollistaggart/hollistaggart-3.jpg" data-lightbox><img src="assets/images/design/hollistaggart/hollistaggart-3.jpg" alt="The Hot Garden · John Knuth exhibition logo" /></a>
@@ -175,15 +127,15 @@
     <article class="client-block" id="milieu">
       <div class="client-info">
         <p class="eyebrow">04 · Milieu</p>
-        <h3>TODO: Role / project title</h3>
-        <p>TODO: What you did for Milieu. This looks like skincare-brand social and ad creative ("Your skin is an ecosystem. Decode it."). Add your role, the deliverables, and the outcome.</p>
+        <h3>Skincare social &amp; ad creative</h3>
+        <p>Social and ad creative for Milieu, including the campaign lines "Your skin is an ecosystem. Decode it." and "Personalization, Perfected."</p>
         <div class="tag-row">
           <span class="tag">Social Content</span>
           <span class="tag">Ad Creative</span>
           <span class="tag">Copywriting</span>
         </div>
       </div>
-      <div class="client-media" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="client-media">
         <a href="assets/images/design/milieu/milieu-1.jpg" data-lightbox><img src="assets/images/design/milieu/milieu-1.jpg" alt="Milieu skincare ad · Your skin is an ecosystem, decode it" /></a>
         <a href="assets/images/design/milieu/milieu-2.jpg" data-lightbox><img src="assets/images/design/milieu/milieu-2.jpg" alt="Milieu skincare ad · Personalization, Perfected" /></a>
         <a href="assets/images/design/milieu/milieu-3.jpg" data-lightbox><img src="assets/images/design/milieu/milieu-3.jpg" alt="Milieu skincare ad · Read your skin's milieu" /></a>
@@ -196,14 +148,14 @@
       <div class="client-info">
         <p class="eyebrow">05 · Artdillo Studios</p>
         <h3>Brand identity + social content</h3>
-        <p>Artdillo Studios is a 501(c)(3) arts nonprofit in Flint, MI, building affordable creative spaces for the community. TODO: your specific role, brand book credits this as made with Tommy Cappellino for Michigan Advertising and Marketing, Winter 2026. Add what you contributed and the outcome.</p>
+        <p>Artdillo Studios is a 501(c)(3) arts nonprofit in Flint, MI, building affordable creative spaces for the community. Created with Tommy Cappellino for Michigan Advertising and Marketing, Winter 2026.</p>
         <div class="tag-row">
           <span class="tag">Brand Identity</span>
           <span class="tag">Nonprofit</span>
           <span class="tag">Social Content</span>
         </div>
       </div>
-      <div class="client-media" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="client-media">
         <a href="assets/images/design/artdillo/artdillo-brandbook-cover.jpg" data-lightbox><img src="assets/images/design/artdillo/artdillo-brandbook-cover.jpg" alt="Artdillo Studios brand book cover" /></a>
         <a href="assets/images/design/artdillo/artdillo-brandbook-brand-summary.jpg" data-lightbox><img src="assets/images/design/artdillo/artdillo-brandbook-brand-summary.jpg" alt="Artdillo Studios brand summary and mission statement" /></a>
         <a href="assets/images/design/artdillo/artdillo-brandbook-target-audience.jpg" data-lightbox><img src="assets/images/design/artdillo/artdillo-brandbook-target-audience.jpg" alt="Artdillo Studios target audience breakdown" /></a>
@@ -219,15 +171,15 @@
     <article class="client-block" id="kappakappagamma">
       <div class="client-info">
         <p class="eyebrow">06 · Kappa Kappa Gamma</p>
-        <h3>TODO: Role / project title</h3>
-        <p>TODO: Bid Day banner design ("Welcome to the Big Leagues"), plus event flyers for Kappaccino and Kappasta. Add your role and the outcome.</p>
+        <h3>Event branding &amp; flyers</h3>
+        <p>Bid Day banner design ("Welcome to the Big Leagues"), plus event flyers for Kappaccino and Kappasta.</p>
         <div class="tag-row">
           <span class="tag">Event Branding</span>
           <span class="tag">Social Media</span>
           <span class="tag">Print Design</span>
         </div>
       </div>
-      <div class="client-media" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="client-media">
         <a href="assets/images/design/kappakappagamma/kkg-banner-design.jpg" data-lightbox><img src="assets/images/design/kappakappagamma/kkg-banner-design.jpg" alt="Kappa Kappa Gamma Bid Day banner design · Welcome to the Big Leagues" /></a>
         <a href="assets/images/design/kappakappagamma/kkg-banner-installed.jpg" data-lightbox><img src="assets/images/design/kappakappagamma/kkg-banner-installed.jpg" alt="Kappa Kappa Gamma Bid Day banner installed on the chapter house" /></a>
         <a href="assets/images/design/kappakappagamma/kkg-bidday-graphic.jpg" data-lightbox><img src="assets/images/design/kappakappagamma/kkg-bidday-graphic.jpg" alt="Kappa Bid Day 2026 football graphic" /></a>
@@ -250,8 +202,8 @@
   <div class="footer-row">
     <div>&copy; <span id="year"></span> Isabella Cimino</div>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.instagram.com/TODO" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/isabellajcimino" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/bellajcimino" target="_blank" rel="noopener">Instagram</a>
       <a href="about.html#contact">Contact</a>
     </div>
   </div>
@@ -263,6 +215,5 @@
 </div>
 
 <script src="js/main.js"></script>
-<script src="js/gallery-lightbox.js"></script>
 </body>
 </html>
